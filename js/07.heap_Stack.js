@@ -2,7 +2,7 @@
 
 let myYoutubeName = "Ritwik Kumar Mondal"
 
-let anotherName = myYoutubeChannel
+let anotherName = myYoutubeName
 anotherName = "chaiAurCode"
 
 console.log(myYoutubeName);
