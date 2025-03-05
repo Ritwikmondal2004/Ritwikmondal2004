@@ -1,42 +1,31 @@
-//array
+const marvel_heros = ["thor", "Ironman", "spiderman"]
+const dc_heros = ["superman", "flash", "batman"]
+
+// marvel_heros.push(dc_heros)
+
+// console.log(marvel_heros);
+// console.log(marvel_heros[3][1]);
+
+// const allHeros = marvel_heros.concat(dc_heros)
+// console.log(allHeros);
+
+const all_new_heros = [...marvel_heros, ...dc_heros]
+
+// console.log(all_new_heros);
+
+const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+
+const real_another_array = another_array.flat(Infinity)
+console.log(real_another_array);
 
 
-const myarray = [1,2,3,4,5];
-const myhero=["saktiman","munnavai"];
-console.log(myhero);
-console.log(myarray);
 
+console.log(Array.isArray("Hitesh"))
+console.log(Array.from("Hitesh"))
+console.log(Array.from({name: "hitesh"})) // interesting
 
-//----------------push one element-------------
-myarray.push(6);
-console.log(myarray);
+let score1 = 100
+let score2 = 200
+let score3 = 300
 
-myarray.pop(6);
-
-console.log(myarray);
-//-------------------shifthing array------------------
-
-// myarray.unshift(6);
-// //myarray.shift();
-// console.log(myarray);
-
-//----------------join--------------------------------
-const newarray =myarray.join()
-
-console.log(myarray);
-console.log( typeof newarray);
-console.log(newarray);
-
-//------------------slice,splice------------------
-
-console.log("A ", myarray);
-
-const myn1 = myarray.slice(1, 3)
-
-console.log(myn1);
-console.log("B ",myarray);
-
-
-const myn2 = myarray.splice(1, 3)
-console.log("C ",myarray);
-console.log(myn2);
+console.log(Array.of(score1, score2, score3));
